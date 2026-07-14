@@ -238,6 +238,8 @@ img{max-width:100%;display:block}
 .edu-degree{margin-bottom:10px;font-size:14.5px}
 .edu-school{color:var(--text-dim);font-size:13px}
 .edu-courses{margin-top:16px;font-size:14.5px}
+.edu-courses div{margin-bottom:6px}
+.edu-courses div:last-child{margin-bottom:0}
 .lang-row{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;margin-bottom:8px}
 .lang-row:last-child{margin-bottom:0}
 .lang-level{color:var(--text-dim);font-family:var(--mono);font-size:12.5px}
