@@ -57,6 +57,6 @@
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 480) closeMenu();
+    if (window.innerWidth > 860) closeMenu();
   });
 })();
