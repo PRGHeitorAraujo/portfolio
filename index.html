@@ -199,6 +199,22 @@
 
       <div class="project-card">
         <div class="project-head">
+          <div class="project-name">Atlas</div>
+          <div class="project-links"></div>
+        </div>
+        <div class="project-desc">Prontuário médico com segurança e LGPD como base. O isolamento entre profissionais é garantido pelo próprio PostgreSQL (Row-Level Security forçada, fail-closed); cada paciente tem sua chave AES-256-GCM (envelope encryption + crypto-shredding), CPF é buscado por blind index e toda leitura vai para uma auditoria append-only. 26 testes cobrindo RLS, criptografia e auditoria. Código privado.</div>
+        <div class="tag-list">
+          <span class="tag">Node/Express</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">RLS</span>
+          <span class="tag">AES-256-GCM</span>
+          <span class="tag">JWT</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
           <div class="project-name">NexaFlow</div>
           <div class="project-links">
             <a href="https://github.com/PRGHeitorAraujo/nexaflow" target="_blank" rel="noopener" title="Repositório" class="icon-btn">
@@ -218,6 +234,26 @@
           <span class="tag">PostgreSQL</span>
           <span class="tag">Tailwind</span>
           <span class="tag">Playwright</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div class="project-name">Budgeting AI</div>
+          <div class="project-links">
+            <a href="https://github.com/PRGHeitorAraujo/API-Spring-Boot" target="_blank" rel="noopener" title="Repositório" class="icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-desc">Assistente financeiro por voz. A API recebe áudio, transcreve com Whisper, interpreta a intenção com Spring AI e usa tool calling para registrar ou consultar despesas no MySQL, respondendo em áudio (TTS). 32 testes com JUnit 5, Mockito e MockMvc.</div>
+        <div class="tag-list">
+          <span class="tag">Java 21</span>
+          <span class="tag">Spring Boot 4</span>
+          <span class="tag">Spring AI</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Docker Compose</span>
+          <span class="tag">JUnit 5</span>
         </div>
       </div>
 
@@ -261,6 +297,26 @@
           <span class="tag">FastAPI</span>
           <span class="tag">PostgreSQL/pgvector</span>
           <span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div class="project-name">API de Crédito de ICMS-ST</div>
+          <div class="project-links">
+            <a href="https://github.com/PRGHeitorAraujo/API-backend-" target="_blank" rel="noopener" title="Repositório" class="icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-desc">Back-end fiscal (teste técnico). Resolve a alíquota vigente por UF e hierarquia de NCM e calcula o crédito por item, com JWT e perfis de operador e auditor. Idempotência garantida pelo banco (UNIQUE + hash SHA-256 + transação), validada com requisições concorrentes.</div>
+        <div class="tag-list">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Express</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Zod</span>
+          <span class="tag">Swagger</span>
+          <span class="tag">Jest</span>
         </div>
       </div>
 
@@ -322,6 +378,7 @@
           <span class="skill-pill">Node.js/Express</span>
           <span class="skill-pill">FastAPI</span>
           <span class="skill-pill">Spring Boot</span>
+          <span class="skill-pill">Spring AI</span>
           <span class="skill-pill">APIs REST</span>
           <span class="skill-pill">Prisma</span>
           <span class="skill-pill">SQLAlchemy</span>
@@ -347,6 +404,7 @@
         <h4 class="skill-cat">Bancos de Dados</h4>
         <div class="skill-items">
           <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">Row-Level Security</span>
           <span class="skill-pill">pgvector</span>
           <span class="skill-pill">Neon</span>
           <span class="skill-pill">MySQL</span>
@@ -367,8 +425,10 @@
       <div class="skill-card">
         <h4 class="skill-cat">IA</h4>
         <div class="skill-items">
-          <span class="skill-pill">LLMs (Google Gemini)</span>
+          <span class="skill-pill">LLMs (Gemini, OpenAI)</span>
           <span class="skill-pill">NL2SQL / Text-to-SQL</span>
+          <span class="skill-pill">Tool calling</span>
+          <span class="skill-pill">Whisper / TTS</span>
           <span class="skill-pill">Agentes de IA</span>
           <span class="skill-pill">Embeddings</span>
           <span class="skill-pill">sentence-transformers</span>
@@ -387,6 +447,9 @@
           <span class="skill-pill">Railway</span>
           <span class="skill-pill">ESLint</span>
           <span class="skill-pill">Vitest</span>
+          <span class="skill-pill">Jest</span>
+          <span class="skill-pill">JUnit 5</span>
+          <span class="skill-pill">Mockito</span>
           <span class="skill-pill">Testing Library</span>
           <span class="skill-pill">Supertest</span>
           <span class="skill-pill">Playwright (E2E)</span>
